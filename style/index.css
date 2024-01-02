@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+    position: relative;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+a {
+    color: inherit; /* 超链接文字颜色继承父元素 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.wechat-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wechat-info img {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product {
+    background-color: #333;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: inherit;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative; /* 设置相对定位 */
+    overflow: hidden;
+}
+
+.right-top-tip {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    background-color: #1a1a1a; /* 金黄色 */
+    color: #fff !important;
+    padding: 20px 40px 5px 40px;
+    transform: translate(50%, -50%) rotate(45deg);
+    transform-origin: top right;
+    z-index: 10;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.product:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.product:hover h2 {
+    color: #fff;
+}
+
+.product:hover p {
+    color: #fff;
+}
+
+
+.product img {
+    width: 100px; /* 调整为所需尺寸 */
+    
+    height: auto;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+
+.product h2 {
+    color: #4a90e2;
+}
+
+.product p {
+    color: #aaa;
+}
+@media (max-width: 600px) {
+    .product {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .product img {
+        max-width:100%;
+        text-align: center;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+}
